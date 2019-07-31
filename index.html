@@ -33,13 +33,13 @@ var userId = document.querySelector('#nickname'),
 btnId.addEventListener('click',getObj);
 
 function getObj(){
-    fetch('https://api.mercadolibre.com/users/34238/')
+    fetch('https://api.mercadolibre.com/users/198997250/')
     .then(res => res.json())
     .then(user => {
         console.log(user)
         fillPage(user)
     });
-    fetch('https://api.mercadolibre.com/sites/MLV/search?nickname=AARONANTONB')
+    fetch('https://api.mercadolibre.com/sites/MLV/search?nickname=RIFEVEL')
     .then(res => res.json())
     .then(items => {
         console.log(items)
